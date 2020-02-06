@@ -32,7 +32,7 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         // I have created a dummy site for us to use with the plugins we discussed
-        baseUrl: "bck-wagon.lndo.site",
+        baseUrl: "api.andrewclough.com",
         protocol: "http",
         hostingWPCOM: false,
         // We will be using some advanced custom fields
@@ -40,10 +40,10 @@ module.exports = {
         acfOptionPageIds: [],
         verboseOutput: false,
         perPage: 100,
-        searchAndReplaceContentUrls: {
-          sourceUrl: "http://bck-wagon.lndo.site",
-          replacementUrl: "https://localhost:8000",
-        },
+        // searchAndReplaceContentUrls: {
+        //   sourceUrl: "http://api.andrewclough.com",
+        //   replacementUrl: "https://localhost:8000",
+        // },
         // Set how many simultaneous requests are sent at once.
         concurrentRequests: 10,
         includedRoutes: [
